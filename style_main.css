@@ -1,3 +1,5 @@
+/*CSS Objeto de Estudo = Possuirá Diveras Anotações*/
+
 /* Reset básico */
 * {
   margin: 0;
@@ -5,17 +7,30 @@
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Corpo da página - Janela */
 body, html {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: chartreuse;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  background-color: crimson;
+  padding: 100px;
+}
+
+#imagem{
+  background-color: black;
 }
 
 /* Quadrado responsivo */
-.quadrado {
+#cmp_login {
   width: 30vw;
   height: 30vw;
   background-color: #3498db;
@@ -23,9 +38,14 @@ body, html {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+footer{
+  color: black;
+  margin-top: auto;
+}
+
 /* Responsividade extra para telas pequenas */
 @media (max-width: 600px) {
-  .quadrado {
+  #cmp_login {
     width: 60vw;
     height: 60vw;
   }
