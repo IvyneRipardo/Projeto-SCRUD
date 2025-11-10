@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
     <link rel="stylesheet" href="style_main.css">
 </head>
+
 <body>
     <div class="container" id="cnt_menu">
         <div class="box" id="cmp_login">
@@ -15,25 +17,26 @@
                 </h1>
             </header>
             <main>
-                <form>
-                    Usuário
-                </form>
-                <form>
-                    Senha
-                </form>
-                <button>
-                    Entrar
-                </button>
+                <form action="/login" method="POST">
+                    <label for="usuario">Usuário:</label><br>
+                    <input type="text" id="usuario" name="usuario" required><br><br>
+
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha" required><br><br>
+
+                    <button type="submit">Entrar</button>
             </main>
             <footer>
-                Desenvolvido por <a id="link" href="https://www.linkedin.com/in/ivyne-ripardo/" target="_blank">Ivyne Ripardo</a> © 2025
+                Desenvolvido por <a id="link" href="https://www.linkedin.com/in/ivyne-ripardo/" target="_blank">Ivyne
+                    Ripardo</a> © 2025
             </footer>
         </div>
         <div class="box" id="imagem">
             <picture>
-                <img src="source/logo_ivyne_1 (400px).png" alt="Logo da Foto" srcset="source\logo_ivyne_1.png">
+                <img src="source/logo_ivyne_1 (400px).png" alt="Logo da Foto" srcset="source\logo_ivyne_1 (400px).png">
             </picture>
         </div>
-     </div>
+    </div>
 </body>
+
 </html>
